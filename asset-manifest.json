@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/employee-management-react/static/css/main.9345b6e2.css",
-    "main.js": "/employee-management-react/static/js/main.d64a736c.js",
+    "main.js": "/employee-management-react/static/js/main.cbb9dbb5.js",
     "index.html": "/employee-management-react/index.html",
     "main.9345b6e2.css.map": "/employee-management-react/static/css/main.9345b6e2.css.map",
-    "main.d64a736c.js.map": "/employee-management-react/static/js/main.d64a736c.js.map"
+    "main.cbb9dbb5.js.map": "/employee-management-react/static/js/main.cbb9dbb5.js.map"
   },
   "entrypoints": [
     "static/css/main.9345b6e2.css",
-    "static/js/main.d64a736c.js"
+    "static/js/main.cbb9dbb5.js"
   ]
 }
