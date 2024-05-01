@@ -35,7 +35,7 @@ function AppProvider({ children }) {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/data");
+      const res = await axios.get("https://json-api-wsnl.onrender.com/data");
       dispatch({ type: "Get", payload: res.data });
     } catch (error) {
       console.log(error);
@@ -43,26 +43,22 @@ function AppProvider({ children }) {
   };
   
   const getSingleUser = async (id) => {
-    console.log(id)
-    const res = await axios.get(`http://localhost:5000/data/${id}`);
+    const res = await axios.get(`https://json-api-wsnl.onrender.com/data/${id}`);
     dispatch({ type: "getSingleUser", payload: res.data });
   };
 
   const add = async () => {
-    const res = await axios.post("http://localhost:5000/data");
+    const res = await axios.post("https://json-api-wsnl.onrender.com/data");
     dispatch({ type: "Add", payload: res.data });
   };
 
   const del = async (id) => {
-    await axios.delete(`http://localhost:5000/data/${id}`);
+    await axios.delete(`https://json-api-wsnl.onrender.com/data/${id}`);
     dispatch({ type: "Del", payload: id });
   };
 
   const updateUser = async (id , obj) =>{
-    console.log(obj , id , 'object from linda')
-    const res = await axios.patch(`http://localhost:5000/data/${id}` , obj)
-
-    console.log(res.data,'oooomen')
+    const res = await axios.patch(`https://json-api-wsnl.onrender.com/data/${id}` , obj)
     dispatch({type: "Edit" , payload: res.data})
   }
 
